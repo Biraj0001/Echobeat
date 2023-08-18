@@ -1,0 +1,411 @@
+body{
+    background-color: #0b1421;
+}
+*{
+    transition: 0.2s;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.container-pc{
+    display: flex;
+    /* user-select: none; */
+}
+.nav-bar{
+    color : white;
+    list-style-type: none;
+    display: flex;
+    
+}
+.nav-bar li{
+    border-bottom: 3px solid #59efef00;
+    height: 100%;
+    padding: 1% 0%;
+    margin: 0 1.9%;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.nav-bar li:hover{
+    border-bottom: 3px solid #59efef;
+}
+.left{
+    width: 30%;
+}
+.right{
+    width: 70%;
+}
+.genre-list{
+    /* border: 2px solid white; */
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.genre-list li{
+    border: 2px solid #59efef;
+    color:#59efef;
+    list-style-type: none;
+    width: 27%;
+    margin:1% 1%;
+    padding: 1.5% 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.genre-list li:hover{
+    border: 2px solid #59efef;
+    background-color: #59efef;
+    color:#0b1421;
+    font-weight: bolder;
+}
+.genre-list li:active{
+    border: 2px solid #59efef;
+    color:#59efef;
+    background-color: transparent;
+}
+.second-part{
+    display: flex;
+}
+.second-cont{
+    
+    /* border: 2px solid red; */
+    height: 12vh;
+    padding: 0px 10px;
+    /* margin-top: 2vh; */
+}
+.cool-image{
+    border: 2px solid #59efef;
+    width: 50%;
+    top: 0%;
+    right:15%;
+    background-image: url(/new/Image/bits.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.popular-songs{
+    margin-top: 10px;
+    border: 2px solid #59efef;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: center; */
+    padding-top: 10px;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin: 5px;
+    height: 70vh;
+    overflow: auto;
+    
+}
+.phone-name{
+    display: none;
+}
+.popular-songs li{
+    margin: auto;
+    border: 3px solid #59efef;
+    width: 11%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #59efef;
+}
+.popular-songs li:hover{
+    scale: 1.05;
+}
+.song-name{
+    background-color: #0b1421ef;
+    color: #59efef;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.popular-heading{
+    color: white;
+    padding: 1px 14px;
+    margin-top: 5vh;
+    font-size: large;
+}
+.music-player{
+    margin-top: 2.5vh;
+    padding: 0px 3px;
+    border: 2px solid #59efef;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+}
+.mplayer-left{
+    /* border: 2px solid red; */
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+.playing-gif{
+    /* border: 2px solid #59efef; */
+    height: 50px;
+    width: 50px;
+    background-image: url(https://play-lh.googleusercontent.com/Idw4pKVR2uuwvs7QJmloKqquCqBsfNOw7s_XQ-rwZa_y0Cw9A6LpRfou6mJML1MgA7M);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.current-song-img{
+    
+    height: 45px;
+    width: 45px;
+    background-image: url(/new/Image/Shri-Krishna-Govind-Hare-Murari.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2px;
+    border-radius: 10px;
+}
+.song-details{
+    /* border: 2px solid #59efef; */
+    display: flex;
+    border-radius: 10px;
+    padding-right: 5px;
+    width: 35%;
+    gap: 5px;
+  
+}
+.current-songname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #59efef;
+}
+.nav-buttons{
+    color: white;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: xx-large;
+    width: 25%;
+}
+.nav-buttons li{
+    cursor: pointer;
+    color: white;
+}
+.nav-buttons li:hover{
+    cursor: pointer;
+    color: white;
+}
+.nav-buttons li:active{
+    cursor: pointer;
+    color: #010a0f;
+}
+.music-range-bars::-webkit-slider-runnable-track,.sound-range-bar,.music-range-bar{
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    border: 2px solid #59efef;
+    background-color: #59efef;
+    border-radius: 25px;
+    height: 7px;
+}
+.music-range-bar::-webkit-slider-thumb,.sound-range-bar::-webkit-slider-thumb{
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    border: 2px solid #59efef;
+    border-radius: 20px;
+    background:#0b1421;
+}
+.play-range{
+    margin:0 30px;
+    width: 75%;
+}
+.play-time{
+    color: white;
+}
+.mplayer-right{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+}
+.sound-range{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+    justify-content: space-around;
+}
+.item-2{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.right-cont{
+    display: flex;
+    width: 20%;
+}
+.music-range-bar
+{
+    background-image: linear-gradient(rgb(1, 28, 44),black);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+.sound-range-bar{
+    background-image: linear-gradient(rgb(1, 28, 44),black);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.left{
+    color : white;
+}
+.songs-container li{
+    list-style-type: none;
+    display: flex;
+    border: 2px solid rgba(128, 128, 128, 0.459);
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+.songs-container li:hover{
+    background-color: #00ffff21;
+    cursor: pointer;
+}
+.song-details-left{
+    display: flex;  
+    gap: 10px;
+}
+.playicon{
+    font-size: large;
+}
+.app-name{
+    color: #59efef;
+    font-size: 30px;
+    padding: 15px 0px;
+}
+.list-heading{
+    margin-top: 2vh;
+    border: 2px solid #59efef;
+    padding: 5px 5px;
+    background-color: #59efef34;
+    font-size: larger;
+    color:#59efef;
+}
+.song-list{
+    border: 2px solid #59efef;
+    height: 60vh;
+    overflow: auto;
+    background-color: #041622;
+}
+.popular-item{
+    height: 58vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.active{
+    background-color: #b8b8b821;
+}
+.musicmain{
+/* border: 2px solid red; */
+width: 90%;
+display: flex;
+margin-left: 2vw;
+}
+@media only screen and (max-width: 800px) {
+    .container-pc{
+       flex-flow: column;
+       flex-direction: column-reverse;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .second-part{
+        flex-direction: column;
+    }
+    .genre-list{
+        width: 100%;
+    }
+    .genre-list li{
+        width: 40%;
+    }
+    .cool-image{
+       display: none;
+    }
+    .popular-songs{
+        padding: 10px 10px;
+    }
+    .popular-songs li{
+        width: 25%;
+    }
+    .phone-name{
+        display: grid;
+        color: cyan;
+        font-size: larger;
+    }
+    .app-name{
+        display: none;
+    }
+    .music-player{
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 10px;
+    }
+    .mplayer-left{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .right-cont{
+        width: 100%;
+    }
+    .playing-gif{
+        margin-right: 10vw;
+    }
+    .song-details{
+        width: 100%;
+    }
+    .nav-buttons{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .musicmain{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .play-range{
+        width: 70%;
+        margin-right: 5vw;
+    }
+    .bi-shuffle{
+        display: none;
+    }
+    .songs-container{
+        width: 105%;
+    }
+}
