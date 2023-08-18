@@ -79,7 +79,7 @@ body{
     width: 50%;
     top: 0%;
     right:15%;
-    background-image: url(/new/Image/bits.gif);
+    background-image: url(./Image/bits.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@ body{
     
     height: 45px;
     width: 45px;
-    background-image: url(/new/Image/Shri-Krishna-Govind-Hare-Murari.jpg);
+    background-image: url(./Image/Shri-Krishna-Govind-Hare-Murari.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
