@@ -357,7 +357,10 @@ margin-left: 2vw;
         padding: 10px 10px;
     }
     .popular-songs li{
-        width: 25%;
+        width: 26%;
+    }
+    .popular-songs li img{
+      width: 100%;
     }
     .phone-name{
         display: grid;
@@ -407,5 +410,11 @@ margin-left: 2vw;
     }
     .songs-container{
         width: 105%;
+    }
+    .popular-item{
+        margin-top: 10vh;
+    }
+    .song-name{
+        font-size: small;
     }
 }
